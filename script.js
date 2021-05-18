@@ -33,13 +33,6 @@ let renderProperties = (properties) => {
   });
 };
 
-// Recapture Data for Cart Functionality
-let propertyItems1= document.getElementsByClassName(`#propertyItems1`);
-let allItems  = propertyContainer.getElementsByClassName(`fullAddress propType avgPrice`);
-let data1 = [].map.call(allItems, fullAddress => fullAddress.textContent);
-let data2 = [].map.call(allItems, propType => propType.textContent);
-let data3 = [].map.call(allItems, avgPrice => fullAddress.textContent);
-
 //Shopping Cart Functionality
 if (document.readyState == 'loading') {
   document.addEventListner('DOMContentLoaded', ready)
